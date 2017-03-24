@@ -20,17 +20,35 @@ const ShowImage = React.createClass({
 	}
 });
 
-const ShowCard = React.createClass({
-	render(){
-		return (
-			<div>
-				<ShowTitle showTitle = {ShowInformation[0].title}/>
-				<EpisodeNumbers episodeNumbers= "Samarai"/>
-				<h1>Hey There, Cutie</h1>
-				{this.props.children}
-			</div>
+var ShowCard = React.createClass({
+    render: function() {
+        var showComponents = ShowInformation.map(function(show) {
+            return (
+            		<div className={show.title} key={show.id}>
+						<ShowTitle showTitle = {show.title}/>
+						<EpisodeNumbers episodeNumbers= {show.episodes}/>
+						<ShowImage showImage={show.product_image_url} />
+					</div>
+            	);
+        });
+        return <div>{showComponents}</div>;
+    }
+});
 
-		)
+const ShowCard1 = React.createClass({
+	render(){
+		ShowInformation.map(function(show){
+				console.log(show);
+				return (
+					<div>
+						<ShowTitle showTitle = {show.title}/>
+						<EpisodeNumbers episodeNumbers= {show.episodes}/>
+						<ShowImage src={show.product_image_url} />
+					</div>
+					)
+			})
+
+
 	}
 });
 
