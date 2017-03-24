@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-const Routes = require('./config/routes');
+const routes = ('./config/routes');
 const css = require('./styles/main.scss');
 
-ReactDOM.render(Routes, document.getElementById('app'))
+ReactDOM.render(routes, document.getElementById('app'))
