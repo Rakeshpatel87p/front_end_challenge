@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ShowInformation from '../shows';
 
 const ShowTitle = React.createClass({
 	render(){
@@ -23,9 +24,10 @@ const ShowCard = React.createClass({
 	render(){
 		return (
 			<div>
-				<ShowTitle showTitle = "Jungle Judice"/>
+				<ShowTitle showTitle = {ShowInformation[0].title}/>
 				<EpisodeNumbers episodeNumbers= "Samarai"/>
 				<h1>Hey There, Cutie</h1>
+				{this.props.children}
 			</div>
 
 		)

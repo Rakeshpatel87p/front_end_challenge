@@ -1,6 +1,11 @@
+// const React = require('react');
+// const ReactDOM = require('react-dom');
+// const routes = require('./config/routes');
+// const css = require('./styles/main.scss');
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-const routes = ('./config/routes');
-const css = require('./styles/main.scss');
+import routes from './config/routes';
+require('./styles/main.scss');
 
 ReactDOM.render(routes, document.getElementById('app'))
