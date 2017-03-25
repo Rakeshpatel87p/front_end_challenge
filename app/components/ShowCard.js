@@ -20,36 +20,19 @@ const ShowImage = React.createClass({
 	}
 });
 
-var ShowCard = React.createClass({
-    render: function() {
-        var showComponents = ShowInformation.map(function(show) {
-            return (
+const ShowCard = React.createClass({
+    render() {
+        let showComponents = ShowInformation.map(show => {
+        	       return (
             		<div className={show.title} key={show.id}>
 						<ShowTitle showTitle = {show.title}/>
 						<EpisodeNumbers episodeNumbers= {show.episodes}/>
 						<ShowImage showImage={show.product_image_url} />
 					</div>
             	);
-        });
+        })
         return <div>{showComponents}</div>;
     }
-});
-
-const ShowCard1 = React.createClass({
-	render(){
-		ShowInformation.map(function(show){
-				console.log(show);
-				return (
-					<div>
-						<ShowTitle showTitle = {show.title}/>
-						<EpisodeNumbers episodeNumbers= {show.episodes}/>
-						<ShowImage src={show.product_image_url} />
-					</div>
-					)
-			})
-
-
-	}
 });
 
 export default ShowCard;
