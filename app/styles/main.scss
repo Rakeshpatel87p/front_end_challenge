@@ -1,5 +1,12 @@
-$backColor: red;
 $headerFont: 'Oswald', sans-serif;
+
+body {
+	background-color: #f1f1f1;
+}
+
+#topHeader {
+
+}
 
 #header {
     h1 {
@@ -14,6 +21,12 @@ $headerFont: 'Oswald', sans-serif;
 }
 
 #app {
+	
+	* {
+		background-color: white;
+		margin-left: 3%;
+	}
+
 	h1 {
 		display: none;
 	}

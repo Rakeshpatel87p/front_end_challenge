@@ -1,12 +1,13 @@
 import React from 'react';
-import {Router, Route, IndexRoute, hashHistory} from 'react-router'
+import {Router, Route, IndexRoute, hashHistory} from 'react-router';
+import TopHeader from '../components/TopHeader';
 import Header from '../components/Header';
 import ShowCard from '../components/Showcard';
 
 
 const routes = (
 	<Router history={hashHistory}>
-		<Route path="/" component={Header, ShowCard}>
+		<Route path="/" component={TopHeader, Header, ShowCard}>
 		</Route>
 	</Router>
 )

@@ -35,5 +35,7 @@ const ShowCard = React.createClass({
     }
 });
 
+ReactDOM.render(<ShowCard />, document.getElementById('app'))
+
 export default ShowCard;
 export {ShowTitle, EpisodeNumbers, ShowImage};
