@@ -16,7 +16,7 @@ body {
         padding: 10% 0;
         background-color: black;
         box-shadow: 0px 10px 5px #888888;
-        font-size: 65px;
+        font-size: 50px;
         font-family: $headerFont;
         color: white
     }
@@ -25,23 +25,23 @@ body {
 #app {
     * {
         background-color: white;
-        margin-left: 3%;
         display: -webkit-flex;
         display: flex;
-        width: 400px;
         height: 250px;
-        background-color: lightgrey;
-        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+
+    div {
+    	padding: 2%;
+
+    }
+
     }
     h1 {
         display: none;
     }
-    > div {
-        background-color: cornflowerblue;
-        width: 100px;
-        height: 100px;
 
+    > div img {
 
     }
 }
