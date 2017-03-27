@@ -25,9 +25,9 @@ const ShowCard = React.createClass({
         let showComponents = ShowInformation.map(show => {
         	       return (
             		<div className={show.title} key={show.id}>
+						<ShowImage showImage={show.product_image_url} />
 						<ShowTitle showTitle = {show.title}/>
 						<EpisodeNumbers episodeNumbers= {show.episodes}/>
-						<ShowImage showImage={show.product_image_url} />
 					</div>
             	);
         })

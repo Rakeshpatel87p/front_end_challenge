@@ -1,5 +1,19 @@
 $backColor: red;
+$headerFont: 'Oswald', sans-serif;
 
-body {
-	background-color: $backColor;
+#header {
+    h1 {
+        text-align: center;
+        padding: 10% 0;
+        background-color: red;
+        box-shadow: 0px 10px 5px #888888;
+        font-size:65px;
+        font-family: $headerFont;
+    }
+}
+
+#app {
+	h1 {
+		display: none;
+	}
 }
