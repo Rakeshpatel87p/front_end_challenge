@@ -1,33 +1,47 @@
-$headerFont: 'Oswald', sans-serif;
-
+$headerFont: 'Oswald',
+sans-serif;
 body {
-	background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
-#topHeader {
-
-}
+#topHeader {}
 
 #header {
+    * {
+        margin-left: 3.5%;
+        width: 94%;
+    }
     h1 {
         text-align: center;
         padding: 10% 0;
         background-color: black;
         box-shadow: 0px 10px 5px #888888;
-        font-size:65px;
+        font-size: 65px;
         font-family: $headerFont;
         color: white
     }
 }
 
 #app {
-	
-	* {
-		background-color: white;
-		margin-left: 3%;
-	}
+    * {
+        background-color: white;
+        margin-left: 3%;
+        display: -webkit-flex;
+        display: flex;
+        width: 400px;
+        height: 250px;
+        background-color: lightgrey;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    h1 {
+        display: none;
+    }
+    > div {
+        background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
 
-	h1 {
-		display: none;
-	}
+
+    }
 }
