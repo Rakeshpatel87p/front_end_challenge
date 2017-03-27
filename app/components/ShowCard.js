@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ShowInformation from '../shows';
+import {Link} from 'react-router';
 
 const ShowTitle = React.createClass({
 	render(){
@@ -16,7 +17,9 @@ const EpisodeNumbers = React.createClass({
 
 const ShowImage = React.createClass({
 	render(){
-		return <img src={this.props.showImage} />
+		return (
+			<img src={this.props.showImage} />
+		)
 	}
 });
 
@@ -25,8 +28,8 @@ const ShowCard = React.createClass({
         let showComponents = ShowInformation.map(show => {
         	       return (
             		<div className={show.title} key={show.id}>
-						<ShowImage showImage={show.product_image_url} />
 						<ShowTitle showTitle = {show.title}/>
+						<ShowImage showImage={show.product_image_url} showID={show.id}/>
 						<EpisodeNumbers episodeNumbers= {show.episodes}/>
 					</div>
             	);

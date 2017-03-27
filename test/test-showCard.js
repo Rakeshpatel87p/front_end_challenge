@@ -34,7 +34,5 @@ describe('ShowCard component', function() {
         var result = renderer.getRenderOutput();
         console.log(result.props.children);
         result.type.should.equal('img');
-        
-        // result.props.children.should.equal('testing');
     });
 });

@@ -8,4 +8,4 @@ import ReactDOM from 'react-dom';
 import routes from './config/routes';
 require('./styles/main.scss');
 
-ReactDOM.render(routes, document.getElementById('topHeader'))
+ReactDOM.render(routes, document.getElementById('main'))

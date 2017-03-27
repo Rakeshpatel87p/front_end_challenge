@@ -12,6 +12,7 @@ const routes = (
 	<Router history={browserHistory}>
 		<Route path={'/'} component={TopViceHeader}>
 			<Route path={'/shows'} component={Header, ShowCard} />
+			<Route path={'/shows/:id'} component={Header} />
 		</Route>
 	</Router>
 )
