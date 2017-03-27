@@ -1,6 +1,6 @@
-const React = require('react');
-const TestUtils = require('react-addons-test-utils');
-const should = require('chai').should();
+import React from 'react';
+import TestUtils from 'react-addons-test-utils';
+import {should} from 'chai';
 import ShowCard from '../components/ShowCard';
 
 describe('ShowCard component', function() {

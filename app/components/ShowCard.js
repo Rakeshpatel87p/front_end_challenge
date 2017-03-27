@@ -36,4 +36,4 @@ const ShowCard = React.createClass({
 });
 
 export default ShowCard;
-export ShowTitle;
+export {ShowTitle};
