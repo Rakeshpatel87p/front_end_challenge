@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ShowInformation from '../shows';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router';
 
 const ShowTitle = React.createClass({
 	render(){
@@ -27,11 +27,15 @@ const ShowCard = React.createClass({
     render() {
         let showComponents = ShowInformation.map(show => {
         	       return (
+        	       		
 	            		<div className={show.title} key={show.id}>
+							<Link to="/shows/" + {show.id}>
 							<ShowTitle showTitle = {show.title}/>
 							<ShowImage showImage={show.product_image_url} showID={show.id}/>
 							<EpisodeNumbers episodeNumbers= {show.episodes}/>
+							</Link>
 						</div>
+						
 					
 
             	);

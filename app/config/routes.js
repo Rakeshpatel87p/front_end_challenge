@@ -20,37 +20,20 @@
 // export default routes;
 
 import React from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-// import TopViceHeader from '../components/TopViceHeader';
-// import Header from '../components/Header';
-// import ShowCard from '../components/Showcard';
-const TopViceHeader = require('../components/TopViceHeader');
-// const Header = require('../components/Header');
-const ShowCard = require('../components/Showcard')
+import {BrowserRouter as Router, Route} from 'react-router';
 
-
-// const routes = (
-// 	<Router>
-// 		<Route path={'/'} component={TopViceHeader}>
-// 			<Route path={'/shows'} component={ShowCard} />
-// 		</Route>
-// 	</Router>
-// )
-
-class Routes extends React.Component {
+export class Routes extends React.component {
 	render(){
 		return (
 				<Router>
-					<Route path={'/'} component={TopViceHeader}>
-						<Route path={'/shows'} component={ShowCard} />
+					<Route path='/' component={TopViceHeader}>
+						<Route path='/shows' component={ShowCard} />
+						<Route path='/shows/:id' component={ShowCard}/>
 					</Route>
 				</Router>
-
 			)
 	}
 }
-
-export default Routes;
 
 // import TopViceHeader from '../components/TopViceHeader';
 // import Header from '../components/Header';
