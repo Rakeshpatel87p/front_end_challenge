@@ -5,7 +5,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Routes} from './config/routes';
+import App from './config/routes';
 require('./styles/main.scss');
 
-ReactDOM.render(Routes, document.getElementById('main'))
+ReactDOM.render(App, document.getElementById('main'))

@@ -1,40 +1,35 @@
-// import React from 'react';
-// import {Router, Route, IndexRoute} from 'react-router-dom';
-// import {browserHistory} from 'react-router';
-// // import TopViceHeader from '../components/TopViceHeader';
-// // import Header from '../components/Header';
-// // import ShowCard from '../components/Showcard';
-// const TopViceHeader = require('../components/TopViceHeader');
-// // const Header = require('../components/Header');
-// const ShowCard = require('../components/Showcard')
+import React from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import TopViceHeader from '../components/TopViceHeader';
+import ShowCard from '../components/Showcard';
 
+
+const App = () => (
+	<Router>
+		<div>
+			<Route path="/" component={TopViceHeader} />
+			<Route path="/shows" component={ShowCard} />
+		</div>
+	</Router>
+
+	);
+
+export default App;
+// import React from 'react';
+// import {Router, Route, browserHistory} from 'react-router';
+// import TopViceHeader from '../components/TopViceHeader';
+// import ShowCard from '../components/Showcard';
 
 // const routes = (
-// 	<Router history={browserHistory}>
-// 		<Route path={'/'} component={TopViceHeader}>
-// 			<Route path={'/shows'} component={ShowCard} />
-// 		</Route>
-// 	</Router>
-// )
+// 				<Router history={browserHistory}>
+// 					<Route path='/' component={TopViceHeader}>
+// 						<Route path='/shows' component={ShowCard} />
+// 						<Route path='/shows/:id' component={ShowCard}/>
+// 					</Route>
+// 				</Router>
+// 			)
 
 // export default routes;
-
-import React from 'react';
-import {BrowserRouter as Router, Route} from 'react-router';
-
-export class Routes extends React.component {
-	render(){
-		return (
-				<Router>
-					<Route path='/' component={TopViceHeader}>
-						<Route path='/shows' component={ShowCard} />
-						<Route path='/shows/:id' component={ShowCard}/>
-					</Route>
-				</Router>
-			)
-	}
-}
-
 // import TopViceHeader from '../components/TopViceHeader';
 // import Header from '../components/Header';
 // import ShowCard from '../components/Showcard';
