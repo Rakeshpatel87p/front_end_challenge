@@ -11,6 +11,6 @@ const Header = React.createClass({
 	}
 })
 
-ReactDOM.render(<Header />, document.getElementById('header'))
+// ReactDOM.render(<Header />, document.getElementById('header'))
 
-export default Header;
+// export default Header;
