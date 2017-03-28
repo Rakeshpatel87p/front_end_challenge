@@ -6,6 +6,7 @@ const TopViceHeader = React.createClass({
 		return (
 			<div>
 				<img src="../images/vice_header_logo.png" />
+				<h1>Shows</h1>
 				{this.props.children}
 			</div>
 		)

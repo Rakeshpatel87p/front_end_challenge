@@ -5,14 +5,40 @@ body {
 }
 
 #topHeader {
-    padding: 1%;
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    height: 58px;
-    top: 0;
-    left: 0;
-    right: 0;
+    div {
+        padding: 1%;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        height: 58px;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    img {
+        left: 31%;
+        position: absolute;
+        @media screen and (min-width: 489px){
+            left:37%;
+            animation-duration: 1.42s;
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+            animation-delay: 1s;
+            animation-name: example;
+            animation-fill-mode: forwards;
+
+            @keyframes example {
+                from {left: 37%;;}
+                to {left: 8.625rem;}
+            }
+        }
+
+        @media screen and (min-width: 767px){
+            left:40%;
+        }  
+    }
+
+
 }
 
 #header {
