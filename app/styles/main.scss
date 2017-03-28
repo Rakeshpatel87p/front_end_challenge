@@ -14,28 +14,59 @@ body {
         top: 0;
         left: 0;
         right: 0;
+        border-bottom: 1px dotted red;
     }
 
     img {
         left: 31%;
         position: absolute;
+        display:inline-block;
+        vertical-align: top;
+        float:left;
+
         @media screen and (min-width: 489px){
             left:37%;
             animation-duration: 1.42s;
             animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
             animation-delay: 1s;
-            animation-name: example;
+            animation-name: logoLeftSlide;
             animation-fill-mode: forwards;
 
-            @keyframes example {
-                from {left: 37%;;}
-                to {left: 8.625rem;}
+            @keyframes logoLeftSlide {
+                from {left: 37%;}
+                to {left: 2.625rem;}
             }
         }
-
         @media screen and (min-width: 767px){
             left:40%;
         }  
+    }
+
+    h1 {
+        opacity: 0;
+        font-family: $headerFont;
+        letter-spacing: 1px;
+        vertical-align: top;
+        
+
+        @media screen and (min-width: 600px){
+            display: inline-block;
+            float: right;
+            margin-right: 45%;
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-name: opacityDelay;
+            animation-fill-mode: forwards;
+        }
+
+        @media screen and (min-width: 872px){
+            margin-right: 49%;
+        }
+
+        @keyframes opacityDelay {
+            from {opacity: 0;}
+            to {opacity: 1;}
+            }
     }
 
 
