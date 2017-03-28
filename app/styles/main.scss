@@ -10,11 +10,15 @@ body {
         background-color: white;
         position: fixed;
         width: 100%;
-        height: 58px;
+        height: 3.75rem;
         top: 0;
         left: 0;
         right: 0;
         border-bottom: 1px dotted red;
+            display:flex;
+    align-items: center;
+    justify-content: center;
+
     }
 
     img {
@@ -45,14 +49,14 @@ body {
     h1 {
         opacity: 0;
         font-family: $headerFont;
-        letter-spacing: 1px;
-        vertical-align: top;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
         
 
         @media screen and (min-width: 600px){
             display: inline-block;
             float: right;
-            margin-right: 45%;
+            
             animation-delay: 1s;
             animation-duration: 3s;
             animation-name: opacityDelay;
@@ -60,7 +64,7 @@ body {
         }
 
         @media screen and (min-width: 872px){
-            margin-right: 49%;
+            margin-right:5%;
         }
 
         @keyframes opacityDelay {
@@ -68,7 +72,6 @@ body {
             to {opacity: 1;}
             }
     }
-
 
 }
 
@@ -99,7 +102,7 @@ body {
     }
     
     div {
-    padding: 2%
+        padding: 2%;
     }
 
     div > h1:hover {
