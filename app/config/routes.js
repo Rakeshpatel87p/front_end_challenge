@@ -1,13 +1,13 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import TopViceHeader from '../components/TopViceHeader';
+import hey from '../components/TopViceHeader';
 import ShowCard from '../components/Showcard';
 
 
 const App = () => (
 	<Router>
 		<div>
-			<Route path="/" component={TopViceHeader} />
+			<Route exact path="/" component={hey} />
 			<Route path="/shows" component={ShowCard} />
 		</div>
 	</Router>

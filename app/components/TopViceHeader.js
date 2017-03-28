@@ -7,13 +7,13 @@ const TopViceHeader = React.createClass({
 			<div>
 				<img src="../images/vice_header_logo.png" />
 				<h1>Shows</h1>
-				{this.props.children}
 			</div>
 		)
 	}
 })
 
-ReactDOM.render(<TopViceHeader />, document.getElementById('topHeader'))
+const hey = ReactDOM.render(<TopViceHeader />, document.getElementById('topHeader'))
 
-export default TopViceHeader;
+export default hey;
+// export default TopViceHeader;
 
