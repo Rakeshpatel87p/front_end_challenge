@@ -1,18 +1,23 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import hey from '../components/TopViceHeader';
+import TopViceHeader from '../components/TopViceHeader';
 import ShowCard from '../components/Showcard';
 
 
 const App = () => (
 	<Router>
 		<div>
-			<Route exact path="/" component={hey} />
-			<Route path="/shows" component={ShowCard} />
+			<Route exact path="/" component={TopViceHeader} />
+			<Route exact path="/shows" component={ShowCard} />
+			<Route path="/shows/:id" render={({match}) => (
+				<h1>
+					{match.params.id}
+				</h1>
+				)} />
 		</div>
 	</Router>
 
-	);
+);
 
 export default App;
 // import React from 'react';

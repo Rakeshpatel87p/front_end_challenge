@@ -12,8 +12,6 @@ const TopViceHeader = React.createClass({
 	}
 })
 
-const hey = ReactDOM.render(<TopViceHeader />, document.getElementById('topHeader'))
+ReactDOM.render(<TopViceHeader />, document.getElementById('topHeader'))
 
-export default hey;
-// export default TopViceHeader;
-
+export default TopViceHeader;
