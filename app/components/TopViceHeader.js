@@ -5,7 +5,7 @@ const TopViceHeader = React.createClass({
 	render(){
 		return (
 			<div>
-				<img src="../images/vice_header_logo.png" />
+				<img src="./app/images/vice_header_logo.png" />
 				<h1>Shows</h1>
 			</div>
 		)
