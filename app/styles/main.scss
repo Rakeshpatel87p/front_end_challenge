@@ -17,8 +17,9 @@ body {
         top: 0;
         left: 0;
         right: 0;
-        border-bottom: 1px dotted red;
         display:flex;
+        display: -moz-box;
+        border-bottom: 1px dotted red;
         align-items: center;
         justify-content: center;
 
@@ -27,7 +28,6 @@ body {
     img {
         left: 31%;
         position: absolute;
-        display: -moz-inline-stack;
         display:inline-block;
         vertical-align: top;
         float:left;
@@ -109,7 +109,15 @@ body {
     
     div {
         padding: 2%;
-        padding-top:4%;
+        padding-top:10%;
+
+        @media screen and (min-width: 749px){
+            padding-top:7%;
+        }
+
+         @media screen and (min-width: 980px){
+            padding-top:5%;
+        }
     }
 
     > div {
